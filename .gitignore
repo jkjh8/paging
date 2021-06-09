@@ -1,0 +1,6 @@
+/audio
+/Page_Backup
+*.wav
+*.zip
+.idea
+.vscode
