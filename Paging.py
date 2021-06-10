@@ -723,8 +723,8 @@ class Main_UI(QMainWindow, Ui_MainWindow):
         self.qdialog.Qui.Main_Message.setText("시스템을 재부팅 하시겠습니까?")
         # ok
         if self.qdialog.exec_():
-            start_new_thread(self.udpLogReturn, 'warning', 'high', 
-                             (LocalID, 'Paging Control -- 시스템을 재부팅합니다.'))
+            start_new_thread(self.udpLogReturn,
+                             (LocalID, 'warning', 'high', 'Paging Control -- 시스템을 재부팅합니다.'))
             subprocess.run('sudo reboot', shell=True)
 
     @Slot()
